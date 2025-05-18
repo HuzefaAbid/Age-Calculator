@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="outer-div">
+    <div class="inner-div">
+      <form action="/">
+       <div class="input-container">
+          <div class="input">
+            <label for="day">Day</label><br>
+            <input type="text" id="day">
+            <div class="error-msg" id="day-error"></div>
+          </div>
+
+          <div class="input">
+            <label for="month">Month</label><br>
+            <input type="text" id="month">
+            <div class="error-msg" id="month-error"></div>
+          </div>
+
+          <div class="input">
+            <label for="year">Year</label><br>
+            <input type="text" id="year">
+            <div class="error-msg" id="year-error"></div>
+          </div>
+       </div>
+
+        <div class="line-container">
+          <div class="line"></div>
+          <button class="round-button" type="submit">&#8595;</button>
+        </div>
+      </form>
+
+      <h1 class="years"></h1>
+      <h1 class="months"></h1>
+      <h1 class="days"></h1>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
